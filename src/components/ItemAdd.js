@@ -112,7 +112,7 @@ export default function ItemAdd(props) {
 
         const config = {
             method : 'POST',
-            body : formData
+            body : formData,
             headers: {
                 // 'content-type': 'multipart/form-data'
                 'content-type': 'application/json'

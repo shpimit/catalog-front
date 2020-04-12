@@ -45,8 +45,8 @@ steps:
             app: $_PROJECT_NAME
         spec:
           ports:
-            - port: 8080
-              targetPort: 8080
+            - port: 3000
+              targetPort: 3000
           selector:
             app: $_PROJECT_NAME
           type:
@@ -73,10 +73,10 @@ steps:
                 - name: $_PROJECT_NAME
                   image: gcr.io/$PROJECT_ID/$_PROJECT_NAME:$COMMIT_SHA
                   ports:
-                    - containerPort: 8080
+                    - containerPort: 3000
                   env:
                     - name: VUE_APP_API_HOST
-                      value: http://$${_GATEWAY_IP:-localhost}:$${_GATEWAY_PORT:-8080}
+                      value: http://$${_GATEWAY_IP:-localhost}:$${_GATEWAY_PORT:-3000}
         EOF
 substitutions:
     _PROJECT_NAME: ui

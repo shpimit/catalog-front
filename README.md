@@ -1,3 +1,52 @@
+## `React`로 프로젝트 만들기
+
+### 1. CRA(Create React App) 설치하기
+
+* NPM 명령어를 이용해서 CRA를 설치할 수 있습니다.
+```shell
+npm install -g create-react-app
+```
+### 2. React 프로젝트 생성하기
+* 특정한 폴더로 이동하여 create-react-app 명령어를 이용하여 jobmp라는 폴더를 만들어 보도록 하겠습니다.
+```shell
+c:\Data\create-react-app jobmp
+```
+### 3. Social Login
+
+* Google 로그인 [API Key 발급받기](https://console.cloud.google.com/apis/)
+
+```shell
+#$ yarn add react-google-login
+#or refer to https://console.cloud.google.com/apis/
+$ npm install react-google-login
+```
+
+* [KaKao 로그인](https://www.npmjs.com/package/react-kakao-login)
+
+```shell
+$ npm i -S react react-dom react-kakao-login
+```
+
+* [Facebook 로그인](https://www.npmjs.com/package/react-facebook-login)
+
+```shell
+$ yarn add react-facebook-login 
+or
+$ npm install react-facebook-login
+```
+
+### 4. React Router Dom(페이지 이동을 구현하기 위해)
+```shell
+$ npm install --save react-router-dom
+```
+
+### 5. 서버와의 통신목적의 라이브러리 axios를 설치(From React client)
+```shell
+npm install --save axios
+```
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -79,7 +79,7 @@ steps:
                       value: http://$${_GATEWAY_IP:-localhost}:$${_GATEWAY_PORT:-3000}
         EOF
 substitutions:
-    _PROJECT_NAME: ui
+    _PROJECT_NAME: catalog-front
 options:
   env:
     #    # location/name of GKE cluster (used by all kubectl commands)

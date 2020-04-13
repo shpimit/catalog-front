@@ -8,7 +8,7 @@ MAINTAINER shpimit <shpimit@nate.com>
 VOLUME /tmp
 
 # 도커 이미지를 실행할시 실행될 스크립트
-RUN chmod +x ./start-server.sh
 COPY ./start-server.sh /usr/local/bin
 RUN ln -s /usr/local/bin/start-server.sh /start-server.sh
+RUN chmod +x /start-server.sh
 CMD ["start-server.sh"]

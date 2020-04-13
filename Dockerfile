@@ -5,7 +5,7 @@ FROM    node:10.15.3
 MAINTAINER shpimit <shpimit@nate.com>
 
 # 도커 컨테이너 호스트와 공유할 디렉터리 지정
-VOLUME /tmp
+VOLUME /deploy
 
 # 도커 이미지를 실행할시 실행될 스크립트
 COPY ./start-server.sh /usr/local/bin

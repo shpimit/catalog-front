@@ -1,5 +1,5 @@
 #!/bin/bash
 
-#cd /deploy
+cd /deploy
 yarn install
 yarn start
